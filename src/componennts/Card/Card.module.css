@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom:1px solid gray;
+    padding :16px;
+    align-items: center;
+}
+
+.cardEmoji{
+    font-size: 40px;
+    align-items: center;
+}
+.cardDesc{
+    font-size:18px;
+}
+.btnDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;align-items: center;
+}
+.btnDiv span{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: azure;
+    border: 1px solid var(--mainpurple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.btnDiv button{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+}
