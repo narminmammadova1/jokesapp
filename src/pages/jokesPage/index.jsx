@@ -18,14 +18,14 @@ export const JokesPage = () => {
  const handleRemoveVote=(i)=>{
     let newData=[...data]
     newData[i]={...newData[i],
-        vote:newData[i].vote+1}
+        vote:newData[i].vote-1}
         newData.sort((itema,itemZ)=>itemZ.vote-itema.vote)
         setData(newData)
     console.log("i",newData[i]);
  }
  const handleAddVote=(i)=>{ let newData=[...data]
     newData[i]={...newData[i],
-        vote:newData[i].vote-1}
+        vote:newData[i].vote+1}
         newData.sort((itema,itemZ)=>itemZ.vote-itema.vote)
 
         setData(newData)

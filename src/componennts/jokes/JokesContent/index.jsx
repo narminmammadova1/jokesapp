@@ -35,8 +35,8 @@ return emoji
  {data?.map((item,index)=>{
     const emoji=handleEmoji(index)
     return <Card vote={item.vote} text={item.joke} emoji={emoji} 
-    onDecrement={()=>plus(index)} 
-    onIncrement={()=>minus(index)}/>
+    onDecrement={()=>minus(index)} 
+    onIncrement={()=>plus(index)}/>
  } )}
 
 
